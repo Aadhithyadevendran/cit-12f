@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Full viewport height adjustment */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centering content flexibly */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+}
+
+nav div {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sign-in-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4a88d9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #376bb3;
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, white, #f3f3f3);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #4a88d9;
+  color: white;
+  padding: 20px;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* NotFound Page */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found a {
+  padding: 10px 20px;
+  background-color: #4a88d9;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.not-found a:hover {
+  background-color: #376bb3;
+  transform: scale(1.05);
+}
